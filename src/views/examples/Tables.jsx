@@ -127,7 +127,7 @@ class Tables extends React.Component {
   }
 
   onDelete(post_id, post_username) {
-    //This is what you were working on IBRAHIM 
+    //This is what you were working on IBRAHIM
     // const replies = this.state.posts[0].replies;
     // for(let reply of replies) {
     //   console.log(reply);
@@ -138,7 +138,7 @@ class Tables extends React.Component {
       .then(res => {
         if (res.status === 200) {
           this.changeUserPoints(-10, post_username)
-          //This is what you were working on IBRAHIM 
+          //This is what you were working on IBRAHIM
           // for(let post of this.state.posts) {
           // for(let reply of post.replies) {
           // console.log(reply);
@@ -238,7 +238,7 @@ class Tables extends React.Component {
       //   <div>style={(!isSameUser || !this.isLoggedIn()) ? {display: 'none'}: {}  } </div>
       //   )
       // }
-      
+
       let bar;
       if (!isResolved) {
         bar = (
@@ -390,7 +390,7 @@ class Tables extends React.Component {
             <Message.Header>Congratulations to Arthur, Emerson and Jeffrey for redeeming their 50$, 25$, 25$ gift cards!</Message.Header>
 
           </Message>
-          <Form role="form" onSubmit={this.changePoints}>
+          {/* <Form role="form" onSubmit={this.changePoints}>
       <FormGroup>
                               <Label for="exampleText">Changing Points</Label>
                               <Input type="textarea" name="newpoints" value={this.state.newpoints} onChange={this.handleInputChange} required placeholder=" points"/>
@@ -400,7 +400,7 @@ class Tables extends React.Component {
                               <Input type="textarea" name="usernewpoints" value={this.state.usernewpoints} onChange={this.handleInputChange} required placeholder="change points to user"/>
                             </FormGroup>
                             <Button color="primary" type="submit">Points</Button>
-                            </Form>
+                            </Form> */}
 
           <div style={(!this.state.current_user || !this.state.current_user.userType || this.state.current_user.userType !== 'MOD') ? { display: 'none' } : {}}>
             <iframe width="450" height="350" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" allowtransparency="true" src="https://chatroll.com/embed/chat/cloudmates?id=82DE-42PjaF&platform=html"></iframe>
@@ -472,7 +472,7 @@ class Tables extends React.Component {
                     {table_rows}
                   </tbody>
                 </Table>
-                
+
                 {/* <CardFooter className="py-4">
                   <nav aria-label="...">
                   <Pagination
